@@ -4,7 +4,7 @@ import random
 Glist = ["Rock","Paper","Scissors"]
 score = 0
 compscore = 0
-compinput= Glist[random.randint(0,2)] #loop p work krne k liye bahar likha
+# compinput= Glist[random.randint(0,2)] #loop p work krne k liye bahar likha
 
 x = turtle.Screen()
 x.title("Rock, Paper & Scissors")
@@ -23,11 +23,12 @@ y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
 z = turtle.Turtle()
 z.color("grey")
 z.speed(0)
+z.ht()
 z.penup()
 z.goto(-490,220)
-z.write("Sahilpoint = 0 ||  Computerpoint = 0",font= 80)
+z.write("Sahilpoint: 0 & Computerpoint: 0")
 
-def Rock(score,compscore):
+def Rock(score):
     compinput= Glist[random.randint(0,2)]
     if compinput == "Rock":
          y.clear()
@@ -38,6 +39,7 @@ def Rock(score,compscore):
          y.goto(100,0)
          y.write("You Won !!! ",font= 50)
          score += 10
+         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
     if compinput != "Rock":
          y.clear()
          y.goto(-490,280)
@@ -47,6 +49,7 @@ def Rock(score,compscore):
          y.goto(100,0)
          y.write("Ooooppps! You Lose !",font= 50)
          compscore += 10
+         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
 
 def Paper(score,compscore):
      compinput= Glist[random.randint(0,2)]
@@ -59,6 +62,7 @@ def Paper(score,compscore):
          y.goto(100,0)
          y.write("You Won !!! ",font= 50)
          score += 10
+         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
      if compinput != "Paper":
          y.clear()
          y.goto(-490,280)
@@ -68,9 +72,10 @@ def Paper(score,compscore):
          y.goto(100,0)
          y.write("Ooooppps! You Lose !",font= 50)
          compscore += 10
+         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
 
 
-def Scissors(score,compscore):
+def Scissors():
      compinput= Glist[random.randint(0,2)]
      if compinput == "Scissors":
          y.clear()
@@ -81,6 +86,7 @@ def Scissors(score,compscore):
          y.goto(100,0)
          y.write("You Won !!! ",font= 50)
          score += 10
+         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
      if compinput != "Scissors":
          y.clear()
          y.goto(-490,280)
@@ -90,6 +96,7 @@ def Scissors(score,compscore):
          y.goto(100,0)
          y.write("Ooooppps! You Lose !",font= 50)
          compscore += 10
+         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
 
 
 x.listen()
@@ -99,5 +106,4 @@ x.onkey(Scissors, "s")
 
 while True:
     x.update()
-    z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
 
