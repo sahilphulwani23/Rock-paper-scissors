@@ -119,17 +119,17 @@ while True:
         score = score + 10
         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
         abc = 0
-    if abc == 10:
+    if abc == -20:
         z.clear()
         compscore = compscore + 10
         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
         abc = 0
-    if abc == 10:
+    if abc == 30:
         z.clear()
         score = score + 10
         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
         abc = 0
-    if abc == 10:
+    if abc == -30:
         z.clear()
         compscore = compscore + 10
         z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
