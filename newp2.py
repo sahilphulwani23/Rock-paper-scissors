@@ -1,4 +1,3 @@
-from tkinter import font
 import turtle
 import random
 
@@ -20,17 +19,18 @@ y = turtle.Turtle()
 y.color("black")
 y.speed(0)
 y.penup()
-y.goto(-490,280)
-y.write("Lets play Rock, Paper & Scissors....!!!!",font=20)
-y.goto(-490,260)
-y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
+y.goto(-200,270)
+y.write("Lets play Rock, Paper & Scissors....!!!!",font=50)
+y.goto(-220,240)
+y.write("For Rock,Paper & Scissors Press R , P & S ",font=50)
 
 z = turtle.Turtle()
 z.color("black")
 z.speed(0)
 z.penup()
-z.goto(-490,220)
-z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
+z.goto(-310,150)
+z.write("Sahil's Point = {} \t\t\t\t     Computer's Point = {}".format(score,compscore),font= 50)
+
 
 myimg = turtle.Turtle()
 myimg.penup()
@@ -50,10 +50,10 @@ def Rock():
     if compinput == "Rock":
          abc = 10
          y.clear()
-         y.goto(-490,280)
-         y.write("Lets play Rock, Paper & Scissors....!!!!",font=20)
-         y.goto(-490,260)
-         y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
+         y.goto(-200,270)
+         y.write("Lets play Rock, Paper & Scissors....!!!!",font=50)
+         y.goto(-220,240)
+         y.write("For Rock,Paper & Scissors Press R , P & S ",font=50)
          y.goto(100,0)
          compimg.goto(250,0)
          compimg.shape('rock.gif')
@@ -61,10 +61,10 @@ def Rock():
     if compinput != "Rock": 
          abc = -10
          y.clear()
-         y.goto(-490,280)
-         y.write("Lets play Rock, Paper & Scissors....!!!!",font=20)
-         y.goto(-490,260)
-         y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
+         y.goto(-200,270)
+         y.write("Lets play Rock, Paper & Scissors....!!!!",font=50)
+         y.goto(-220,240)
+         y.write("For Rock,Paper & Scissors Press R , P & S ",font=50)
          y.goto(100,0)
          if compinput == "Paper":
              compimg.goto(250,0)
@@ -83,10 +83,10 @@ def Paper():
      if compinput == "Paper":
          abc = 20
          y.clear()
-         y.goto(-490,280)
-         y.write("Lets play Rock, Paper & Scissors....!!!!",font=20)
-         y.goto(-490,260)
-         y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
+         y.goto(-200,270)
+         y.write("Lets play Rock, Paper & Scissors....!!!!",font=50)
+         y.goto(-220,240)
+         y.write("For Rock,Paper & Scissors Press R , P & S ",font=50)
          y.goto(100,0)
          compimg.goto(250,0)
          compimg.shape('paper.gif')
@@ -94,10 +94,10 @@ def Paper():
      if compinput != "Paper":
          abc = -20
          y.clear()
-         y.goto(-490,280)
-         y.write("Lets play Rock, Paper & Scissors....!!!!",font=20)
-         y.goto(-490,260)
-         y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
+         y.goto(-200,270)
+         y.write("Lets play Rock, Paper & Scissors....!!!!",font=50)
+         y.goto(-220,240)
+         y.write("For Rock,Paper & Scissors Press R , P & S ",font=50)
          y.goto(100,0)
          if compinput == "Rock":
              compimg.goto(250,0)
@@ -115,10 +115,10 @@ def Scissors():
      if compinput == "Scissors":
          abc = 30 
          y.clear()
-         y.goto(-490,280)
-         y.write("Lets play Rock, Paper & Scissors....!!!!",font=20)
-         y.goto(-490,260)
-         y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
+         y.goto(-200,270)
+         y.write("Lets play Rock, Paper & Scissors....!!!!",font=50)
+         y.goto(-220,240)
+         y.write("For Rock,Paper & Scissors Press R , P & S ",font=50)
          y.goto(100,0)
          compimg.goto(250,0)
          compimg.shape('scissors.gif')
@@ -126,10 +126,10 @@ def Scissors():
      if compinput != "Scissors":
          abc = -30
          y.clear()
-         y.goto(-490,280)
-         y.write("Lets play Rock, Paper & Scissors....!!!!",font=20)
-         y.goto(-490,260)
-         y.write("For Rock,Paper & Scissors Press R , P & S ",font=20)
+         y.goto(-200,270)
+         y.write("Lets play Rock, Paper & Scissors....!!!!",font=50)
+         y.goto(-220,240)
+         y.write("For Rock,Paper & Scissors Press R , P & S ",font=50)
          y.goto(100,0)
         #  y.write("Ooooppps! You Lose !",font= 50)
          if compinput == "Rock":
@@ -150,30 +150,30 @@ while True:
     if abc == 10:
         z.clear()
         score = score + 10
-        z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
+        z.write("Sahil's Point = {} \t\t\t\t     Computer's Point = {}".format(score,compscore),font= 50)
         abc = 0
     if abc == -10:
         z.clear()
         compscore = compscore + 10
-        z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
+        z.write("Sahil's Point = {} \t\t\t\t     Computer's Point = {}".format(score,compscore),font= 50)
         abc = 0
     if abc == 20:
         z.clear()
         score = score + 10
-        z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
+        z.write("Sahil's Point = {} \t\t\t\t     Computer's Point = {}".format(score,compscore),font= 50)
         abc = 0
     if abc == -20:
         z.clear()
         compscore = compscore + 10
-        z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
+        z.write("Sahil's Point = {} \t\t\t\t     Computer's Point = {}".format(score,compscore),font= 50)
         abc = 0
     if abc == 30:
         z.clear()
         score = score + 10
-        z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
+        z.write("Sahil's Point = {} \t\t\t\t     Computer's Point = {}".format(score,compscore),font= 50)
         abc = 0
     if abc == -30:
         z.clear()
         compscore = compscore + 10
-        z.write("Sahilpoint = {} ||  Computerpoint = {}".format(score,compscore),font= 80)
+        z.write("Sahil's Point = {} \t\t\t\t     Computer's Point = {}".format(score,compscore),font= 50)
         abc = 0
